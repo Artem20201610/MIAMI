@@ -59,6 +59,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 27px;
+      text-align: center;
       color: $c-text-black;
       text-decoration: none;
       transition: color 0.5s linear;
@@ -114,6 +115,7 @@
 
     &-input,
     &-message {
+      display: block;
       width: 100%;
       margin: 0;
       padding: 14px 0 0 17px;
@@ -132,6 +134,7 @@
       }
 
       &:hover {
+        padding: 12px 0 0 15px;
         background-color: #f7f8ff;
         border: 2px solid #ccd0e0;
       }
@@ -140,6 +143,12 @@
         outline: none;
         background-color: #f7f8ff;
         border: 2px solid #0075ff;
+      }
+    }
+
+    &-input--required {
+      &:hover {
+        padding: 14px 0 0 15px;
       }
     }
 
